@@ -37,7 +37,7 @@ Layout para celulares:
 
 ### Links
 
-- URL do site publicado: [Clique aqui]()
+- URL do site publicado: [Clique aqui](https://guilherme-ddiniz.github.io/four-card-feature-section-master/)
 
 ---
 
