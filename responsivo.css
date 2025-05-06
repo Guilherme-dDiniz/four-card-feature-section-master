@@ -1,0 +1,187 @@
+@media(max-width:1150px) {
+
+    /* ORGANIZAÇÃO DOS ELEMENTOS BÁSICOS */
+    .container {
+        display: grid;
+        grid-template:
+            ". . ."
+            ". informacoes-iniciais ." auto
+            ". cartoes ." auto ". . ." auto / 1fr 725px 1fr;
+    }
+
+    /* ORGANIZAÇÃO DAS INFORMAÇÕES INICIAIS */
+    .container .informacoes-iniciais .titulo {
+        padding: 0px 100px;
+    }
+
+    .container .informacoes-iniciais .sobre {
+        padding: 0px 100px;
+    }
+
+    /* ORGANIZANDO OS CARTÕES */
+    .container .cartoes {
+        display: grid;
+        grid-template:
+            "supervisor team-builder" 100px
+            "supervisor team-builder" 100px
+            "calculator karma" 100px
+            "calculator karma" 100px / 350px 350px 350px;
+        gap: 25px;
+    }
+
+}
+
+@media(max-width:780px) {
+
+    /* ORGANIZAÇÃO DOS ELEMENTOS BÁSICOS */
+    .container {
+        display: grid;
+        grid-template:
+            ". . ."
+            ". informacoes-iniciais ." auto
+            ". cartoes ." auto 
+            ". . ." auto / 1fr 350px 1fr;
+    }
+
+    /* ORGANIZAÇÃO DAS INFORMAÇÕES INICIAIS */
+    .container .informacoes-iniciais .titulo {
+        text-align: center;
+        padding: 0px 0px 5px 0px;
+        font-size: 25px;
+    }
+
+
+    .container .informacoes-iniciais .sobre {
+        text-align: center;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    /* ORGANIZANDO OS CARTÕES */
+    .container .cartoes {
+        display: grid;
+        grid-template:
+            "supervisor " 200px
+            "team-builder" 200px
+            " karma" 200px
+            "calculator" 200px / 300px;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    /* ORGANIZAÇÃO DO CONTEÚDO DOS CARTÕES */
+
+.cartoes div p {font-size: 12px;}
+
+.cartoes div h3 {font-size: 15px;}
+
+
+.cartoes div img {
+    width: 54px;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+}
+
+@media(max-width:400px) {
+    /* ORGANIZAÇÃO DOS ELEMENTOS BÁSICOS */
+    .container {
+        display: grid;
+        grid-template:
+            ". . ."
+            ". informacoes-iniciais ." auto
+            ". cartoes ." auto 
+            ". . ." auto / 1fr 300px 1fr;
+    }
+
+    /* ORGANIZAÇÃO DAS INFORMAÇÕES INICIAIS */
+    .container .informacoes-iniciais .titulo {
+        text-align: center;
+        padding: 0px 0px 5px 0px;
+        font-size: 20px;
+    }
+
+
+    .container .informacoes-iniciais .sobre {
+        text-align: center;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    /* ORGANIZANDO OS CARTÕES */
+    .container .cartoes {
+        display: grid;
+        grid-template:
+            "supervisor " 180px
+            "team-builder" 180px
+            " karma" 180px
+            "calculator" 180px / 270px;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    /* ORGANIZAÇÃO DO CONTEÚDO DOS CARTÕES */
+
+.cartoes div p {font-size: 12px;}
+
+.cartoes div h3 {font-size: 15px;}
+
+
+.cartoes div img {
+    width: 54px;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+}
+
+@media(max-width:350px) {
+    /* ORGANIZAÇÃO DOS ELEMENTOS BÁSICOS */
+    .container {
+        display: grid;
+        grid-template:
+            ". . ."
+            ". informacoes-iniciais ." auto
+            ". cartoes ." auto 
+            ". . ." auto / 1fr 250px 1fr;
+    }
+
+    /* ORGANIZAÇÃO DAS INFORMAÇÕES INICIAIS */
+    .container .informacoes-iniciais .titulo {
+        text-align: center;
+        padding: 0px 0px 5px 0px;
+        font-size: 15px;
+    }
+
+
+    .container .informacoes-iniciais .sobre {
+        text-align: center;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    /* ORGANIZANDO OS CARTÕES */
+    .container .cartoes {
+        display: grid;
+        grid-template:
+            "supervisor " 150px
+            "team-builder" 150px
+            " karma" 150px
+            "calculator" 150px / 240px;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    /* ORGANIZAÇÃO DO CONTEÚDO DOS CARTÕES */
+
+.cartoes div p {font-size: 10px;}
+
+.cartoes div h3 {font-size: 12px;}
+
+
+.cartoes div img {
+    width: 44px;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+}

@@ -1,0 +1,119 @@
+/* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Grey-500: hsl(234, 12%, 34%);
+    --Grey-400: hsl(212, 6%, 44%);
+    --White: hsl(0, 0%, 100%);
+
+    --paragrafo-tamanho-da-fonte: 15px;
+    --tipo-da-fonte-geral: 'Poppins';
+}
+
+/* ORGANIZAÇÂO DOS ELEMENTOS BÁSICOS */
+.container {
+    display: grid;
+    grid-template:
+        ". . ."
+        ". informacoes-iniciais ." auto
+        ". cartoes ." auto ". . ." auto / 1fr 1100px 1fr;
+    gap: 35px;
+    font-family: var(--tipo-da-fonte-geral);
+    color: var(--Grey-500);
+}
+
+.container .informacoes-iniciais {
+    grid-area: informacoes-iniciais;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cartoes {
+    grid-area: cartoes;
+    /* background-color: chartreuse; */
+}
+
+/* ORGANIZAÇÃO DAS INFORMAÇÕES INICIAIS */
+.container .informacoes-iniciais .titulo {
+    text-align: center;
+    padding: 0px 260px;
+    font-size: 35px;
+}
+
+.container .informacoes-iniciais .titulo span.letra-fina {
+    font-weight: 200;
+}
+
+.container .informacoes-iniciais .sobre {
+    text-align: center;
+    padding: 0px 280px;
+    font-size: var(--paragrafo-tamanho-da-fonte);
+}
+
+/* ORGANIZANDO OS CARTÕES */
+.container .cartoes {
+    display: grid;
+    grid-template:
+        ". team-builder . " 100px
+        " supervisor team-builder calculator" 100px
+        "supervisor karma calculator" 100px
+        ". karma ." 100px / 350px 350px 350px;
+    gap: 25px;
+}
+
+.team-builder,
+.supervisor,
+.calculator,
+.karma {
+    border-radius: 5px;
+    padding: 24px;
+    border-top: 5px solid;
+    box-shadow: 0 5px 10px var(--Grey-400);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .cartoes .team-builder {
+    grid-area: team-builder;
+    border-color: var(--Red);
+}
+
+.container .cartoes .supervisor {
+    grid-area: supervisor;
+    border-color: var(--Cyan);
+}
+
+.container .cartoes .calculator {
+    grid-area: calculator;
+    border-color: var(--Blue);
+}
+
+.container .cartoes .karma {
+    grid-area: karma;
+    border-color: var(--Orange);
+}
+
+/* ORGANIZAÇÃO DO CONTEÚDO DOS CARTÕES */
+.team-builder,
+.supervisor,
+.calculator,
+.karma p {
+    font-size: var(--paragrafo-tamanho-da-fonte);
+}
+
+.cartoes div img {
+    width: 64px;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+
